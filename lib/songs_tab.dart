@@ -61,6 +61,7 @@ class _SongsTabState extends State<SongsTab> {
     );
   }
 
+  //TODO: change card font to white for light mode or make card color more visible for black font
   Widget _listBuilder(BuildContext context, int index) {
     if (index >= _itemsLength) return null;
 
