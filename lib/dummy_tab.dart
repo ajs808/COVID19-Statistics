@@ -78,7 +78,7 @@ class _DummyTabState extends State<DummyTab> {
       child: Hero(
         tag: index,
         child: HeroAnimatingSongCard(
-          song: cardNames[index],
+          song: "COVID-19 Vaccine Underway",
           color: color,
           value: cardValues[index],
           heroAnimation: AlwaysStoppedAnimation(0),
@@ -86,7 +86,7 @@ class _DummyTabState extends State<DummyTab> {
             MaterialPageRoute(
               builder: (context) => SongDetailTab(
                 id: index,
-                song: cardNames[index],
+                song: "COVID-19 Vaccine Underway",
                 color: color,
                 value: cardValues[index],
               ),

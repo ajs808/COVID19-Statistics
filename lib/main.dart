@@ -7,6 +7,7 @@ import 'profile_tab.dart';
 import 'settings_tab.dart';
 import 'home_tab.dart';
 import 'widgets.dart';
+//TODO: Add about page
 
 void main() => runApp(MyAdaptingApp());
 
