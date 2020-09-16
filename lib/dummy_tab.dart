@@ -134,10 +134,6 @@ class _DummyTabState extends State<DummyTab> {
             icon: Icon(Icons.refresh),
             onPressed: () async => await _androidRefreshKey.currentState.show(),
           ),
-          IconButton(
-            icon: Icon(Icons.shuffle),
-            onPressed: _togglePlatform,
-          ),
         ],
       ),
       drawer: widget.androidDrawer,
