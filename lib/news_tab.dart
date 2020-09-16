@@ -5,7 +5,7 @@ import 'package:flutter_lorem/flutter_lorem.dart';
 
 import 'utils.dart';
 import 'widgets.dart';
-
+//TODO: add headlines
 class NewsTab extends StatefulWidget {
   static const title = 'News';
   static const androidIcon = Icon(Icons.library_books);

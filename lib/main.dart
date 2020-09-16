@@ -130,12 +130,12 @@ class _AndroidDrawer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(color: Colors.green),
+            decoration: BoxDecoration(color: Colors.blue),
             child: Padding(
               padding: const EdgeInsets.only(bottom: 20),
               child: Icon(
                 Icons.account_circle,
-                color: Colors.green.shade800,
+                color: Colors.blue.shade800,
                 size: 96,
               ),
             ),
