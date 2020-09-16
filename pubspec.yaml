@@ -1,0 +1,24 @@
+name: platform_design
+description: A project showcasing a Flutter app following different platform IA conventions.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.5.0 <3.0.0"
+
+dependencies:
+  english_words: ^3.1.5
+  flutter_lorem: ^1.1.0
+  auto_size_text: ^2.1.0
+  http: ^0.12.2
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.9.0
+
+flutter:
+  uses-material-design: true
