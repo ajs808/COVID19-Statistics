@@ -11,6 +11,10 @@ class NewsTab extends StatefulWidget {
   static const androidIcon = Icon(Icons.library_books);
   static const iosIcon = Icon(CupertinoIcons.news);
 
+  const NewsTab({Key key, this.androidDrawer}) : super(key: key);
+
+  final Widget androidDrawer;
+
   @override
   _NewsTabState createState() => _NewsTabState();
 }
@@ -95,6 +99,7 @@ class _NewsTabState extends State<NewsTab> {
       appBar: AppBar(
         title: Text(NewsTab.title),
       ),
+      drawer: widget.androidDrawer,
       body: Container(
         child: ListView.builder(
           itemBuilder: _listBuilder,

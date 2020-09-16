@@ -6,20 +6,20 @@ import 'detail_tab.dart';
 import 'utils.dart';
 import 'widgets.dart';
 
-class SongsTab extends StatefulWidget {
+class HomeTab extends StatefulWidget {
   static const title = 'COVID-19 Statistics';
   static const androidIcon = Icon(Icons.insert_chart);
   static const iosIcon = Icon(CupertinoIcons.music_note);
 
-  const SongsTab({Key key, this.androidDrawer}) : super(key: key);
+  const HomeTab({Key key, this.androidDrawer}) : super(key: key);
 
   final Widget androidDrawer;
 
   @override
-  _SongsTabState createState() => _SongsTabState();
+  _HomeTabState createState() => _HomeTabState();
 }
 
-class _SongsTabState extends State<SongsTab> {
+class _HomeTabState extends State<HomeTab> {
   static const _itemsLength = 6;
 
   final _androidRefreshKey = GlobalKey<RefreshIndicatorState>();
@@ -127,7 +127,7 @@ class _SongsTabState extends State<SongsTab> {
   Widget _buildAndroid(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(SongsTab.title),
+        title: Text(HomeTab.title),
         actions: [
           IconButton(
             icon: Icon(Icons.refresh),

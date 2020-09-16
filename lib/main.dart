@@ -61,7 +61,7 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
   // all 4 possible tabs. This drawer is injected into the songs tab which is
   // actually building the scaffold around the drawer.
   Widget _buildAndroidHomePage(BuildContext context) {
-    return SongsTab(
+    return HomeTab(
       key: songsTabKey,
       androidDrawer: _AndroidDrawer(),
     );
@@ -80,7 +80,7 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
       tabBar: CupertinoTabBar(
         items: [
           BottomNavigationBarItem(
-              title: Text(SongsTab.title), icon: SongsTab.iosIcon),
+              title: Text(HomeTab.title), icon: HomeTab.iosIcon),
           BottomNavigationBarItem(
               title: Text(NewsTab.title), icon: NewsTab.iosIcon),
           BottomNavigationBarItem(
@@ -91,8 +91,8 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
         switch (index) {
           case 0:
             return CupertinoTabView(
-              defaultTitle: SongsTab.title,
-              builder: (context) => SongsTab(key: songsTabKey),
+              defaultTitle: HomeTab.title,
+              builder: (context) => HomeTab(key: songsTabKey),
             );
           case 1:
             return CupertinoTabView(
@@ -141,8 +141,8 @@ class _AndroidDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: SongsTab.androidIcon,
-            title: Text(SongsTab.title),
+            leading: HomeTab.androidIcon,
+            title: Text(HomeTab.title),
             onTap: () {
               Navigator.pop(context);
             },
