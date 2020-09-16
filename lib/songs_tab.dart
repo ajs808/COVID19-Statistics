@@ -54,8 +54,7 @@ class _SongsTabState extends State<SongsTab> {
 
   Future<void> _refreshData() {
     return Future.delayed(
-      // This is just an arbitrary delay that simulates some network activity.
-      const Duration(seconds: 1),
+      const Duration(seconds: 0),
       () => setState(() => _setData()),
     );
   }
