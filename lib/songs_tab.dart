@@ -40,7 +40,6 @@ class _SongsTabState extends State<SongsTab> {
          cardValues = result;
       });
     });
-    print(cardValues);
     colors = getRandomColors(_itemsLength);
     cardNames = [
       'COVID-19 Cases',
