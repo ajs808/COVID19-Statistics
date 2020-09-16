@@ -6,6 +6,7 @@ import 'detail_tab.dart';
 import 'utils.dart';
 import 'widgets.dart';
 
+//TODO: Change arrow to hamburger menu
 class DummyTab extends StatefulWidget {
   static const title = 'Headlines';
   static const androidIcon = Icon(Icons.description);

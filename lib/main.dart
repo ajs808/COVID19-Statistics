@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'news_tab.dart';
+import 'dummy_tab.dart';
 import 'profile_tab.dart';
 import 'settings_tab.dart';
 import 'home_tab.dart';
@@ -75,6 +76,8 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
   // large number of items, a tab bar cannot. To illustrate one way of adjusting
   // for this, the app folds its fourth tab (the settings page) into the
   // third tab. This is a common pattern on iOS.
+
+  //TODO: Add new page to iOS
   Widget _buildIosHomePage(BuildContext context) {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
@@ -163,6 +166,15 @@ class _AndroidDrawer extends StatelessWidget {
               Navigator.pop(context);
               Navigator.push<void>(context,
                   MaterialPageRoute(builder: (context) => ProfileTab()));
+            },
+          ),
+          ListTile(
+            leading: DummyTab.androidIcon,
+            title: Text(DummyTab.title),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push<void>(context,
+                  MaterialPageRoute(builder: (context) => DummyTab()));
             },
           ),
           // Long drawer contents are often segmented.
