@@ -145,7 +145,7 @@ class HeroAnimatingSongCard extends StatelessWidget {
   final VoidCallback onPressed;
   final String value;
 
-  double get playButtonSize => 50 + 20* heroAnimation.value;
+  double get textSize => 50 + 20* heroAnimation.value;
 
   @override
   Widget build(context) {
@@ -191,19 +191,10 @@ class HeroAnimatingSongCard extends StatelessWidget {
                   padding:
                       EdgeInsets.only(bottom: 45) * (1 - heroAnimation.value),
                   child: Container(
-//                    height: playButtonSize,
-//                    width: playButtonSize,
-//                    decoration: BoxDecoration(
-//                      shape: BoxShape.rectangle,
-//                      color: Colors.black12,
-//                    ),
-//                    alignment: Alignment.center,
-//                    child: Icon(Icons.insert_chart,
-//                        size: playButtonSize, color: Colors.black38),
                     child: Text(
                       '$value',
                       style: TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: playButtonSize,
+                          fontWeight: FontWeight.bold, fontSize: textSize,
                       ),
                     ),
                   ),
