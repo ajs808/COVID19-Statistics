@@ -9,19 +9,17 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 // This file has a number of platform-agnostic non-Widget utility functions.
-
+//TODO: Add theme customizability
 const _myListOfRandomColors = [
   Colors.red,
   Colors.blue,
   Colors.teal,
-  Colors.yellow,
-  Colors.amber,
   Colors.deepOrange,
   Colors.green,
   Colors.indigo,
-  Colors.lime,
   Colors.pink,
   Colors.orange,
+  Colors.blueGrey,
 ];
 
 final _random = Random();

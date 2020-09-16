@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 
 import 'news_tab.dart';
 import 'profile_tab.dart';
@@ -122,6 +121,7 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
   }
 }
 
+//TODO: Make drawer accessible in all screens
 class _AndroidDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
