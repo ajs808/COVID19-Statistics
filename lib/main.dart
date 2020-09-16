@@ -55,14 +55,14 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
   // the platform toggles.
   //
   // This isn't needed for apps that doesn't toggle platforms while running.
-  final songsTabKey = GlobalKey();
+  final homeTabKey = GlobalKey();
 
   // In Material, this app uses the hamburger menu paradigm and flatly lists
   // all 4 possible tabs. This drawer is injected into the songs tab which is
   // actually building the scaffold around the drawer.
   Widget _buildAndroidHomePage(BuildContext context) {
     return HomeTab(
-      key: songsTabKey,
+      key: homeTabKey,
       androidDrawer: _AndroidDrawer(),
     );
   }
@@ -92,7 +92,7 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
           case 0:
             return CupertinoTabView(
               defaultTitle: HomeTab.title,
-              builder: (context) => HomeTab(key: songsTabKey),
+              builder: (context) => HomeTab(key: homeTabKey),
             );
           case 1:
             return CupertinoTabView(
