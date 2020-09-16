@@ -41,6 +41,9 @@ class _SongsTabState extends State<SongsTab> {
       });
     });
     colors = getRandomColors(_itemsLength);
+    //TODO: Add original cards(closed cases, time elapsed, est. time until cure
+
+    //TODO: Add hidden menu with % of relationship
     cardNames = [
       'COVID-19 Cases',
       'COVID-19 Deaths',

@@ -73,6 +73,8 @@ List<String> getRandomNames(int amount) {
       .toList();
 }
 
+//TODO: change array to map
+//TODO: Allow for rearrangement of cards
 Future<List<String>> getValues(int amount) async{
   List<String> res = new List(amount);
   var url = 'https://disease.sh/v3/covid-19/all';
@@ -97,7 +99,6 @@ Future<List<String>> getValues(int amount) async{
 
     cur = jsonResponse['todayDeaths'];
     res[5] = '$cur';
-//    print('Updated: $itemCount.');
   } else {
     print('Request failed with status: ${response.statusCode}.');
   }

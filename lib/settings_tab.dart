@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets.dart';
-
+//TODO: fix settings
 class SettingsTab extends StatefulWidget {
   static const title = 'Settings';
   static const androidIcon = Icon(Icons.settings);
